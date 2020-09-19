@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from '../logo.svg';
 
-function App() {
+function Main() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="Main">
+      <header className="Main-header">
+        <img src={logo} className="Main-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/main/Main.ts</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
