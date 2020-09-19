@@ -1,0 +1,14 @@
+
+.Main-logo {
+    height: 100px;
+    width: 100px;
+    background-color: var(--main-bg-colour);
+}
+.Main-header {
+    position: flex;
+    align-items: center;
+    color: var(--main-text-colour);
+}
+.test {
+    font-size: 50px;
+}

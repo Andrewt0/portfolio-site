@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './main/Main';
+
+import './style/styles.css';
+
+import { Main } from './main/Main';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    <Main message="hello world"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
