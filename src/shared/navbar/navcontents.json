@@ -1,0 +1,21 @@
+{
+    "contents": [
+        {
+            "title": "Home",
+            "referenceLink": "link-to-home"
+        },
+        {
+            "title": "Game",
+            "subLinks": [
+                {
+                    "title": "Child1",
+                    "referenceLink": "link-to-child1"
+                },
+                {
+                    "title":"Child2",
+                    "referenceLink":"link-to-child2"
+                }
+            ]
+        }
+    ]
+}
