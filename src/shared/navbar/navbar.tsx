@@ -1,6 +1,13 @@
 import React from 'react';
 import { NavItem, SubLinks } from "./navitem";
 
+/**
+ * Builds object components for Navbar
+ * 
+ * to update contents of Navbar update navcontents.json
+ * 
+ * Propname changes to be updated in navcontents.json, navitem.tsx and navlink.tsx
+ */
 interface NavBarProps {
     contents: Content[];
 }

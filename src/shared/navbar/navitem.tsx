@@ -1,6 +1,14 @@
 import React from 'react';
 
 import { NavLink } from "./navlink";
+/**
+ * builds individual components of Navbar to form dropdowns or links via
+ * navlink.tsx
+ * 
+ * to update contents of Navbar update navcontents.json
+ * 
+ * Propname changes to be updated in navcontents.json, navbar.tsx and navlink.tsx
+ */
 
 interface NavItemProps {
     title: string;
@@ -37,7 +45,7 @@ export const NavItem:React.FC<NavItemProps> = (props) => {
         return(
             <div className="dropdown">
                 <button className="dropdown-btn">{props.title}</button>
-                <div className="dropdown-contents">
+                <div className="dropdown-content">
                     {navItems}
                 </div>
             </div>

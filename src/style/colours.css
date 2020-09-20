@@ -1,4 +1,6 @@
 :root {
-    --main-bg-colour: red;
+    --main-bg-colour: grey;
     --main-text-colour: green;
+    --main-accent-colour: black;
+    --main-accent-text: white;
 }

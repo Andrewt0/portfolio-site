@@ -1,6 +1,10 @@
 import React from 'react';
 /**
- * creates and return item link component
+ * builds individual components of Navbar
+ * 
+ * to update contents of Navbar update navcontents.json
+ * 
+ * Propname changes to be updated in navcontents.json, navbar.tsx and navitem.tsx
  */
 
 

@@ -1,14 +1,19 @@
 
-.Main-logo {
-    height: 100px;
-    width: 100px;
-    background-color: var(--main-bg-colour);
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
+
 .Main-header {
-    position: flex;
-    align-items: center;
     color: var(--main-text-colour);
+    width: 100%;
 }
-.test {
-    font-size: 50px;
+.Main {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-colour);
 }
