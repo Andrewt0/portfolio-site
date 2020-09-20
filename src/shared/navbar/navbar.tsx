@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavItem, SubLinks } from "./navitem";
+import data from './navcontents.json'
 
 /**
  * Builds object components for Navbar
@@ -8,18 +9,16 @@ import { NavItem, SubLinks } from "./navitem";
  * 
  * Propname changes to be updated in navcontents.json, navitem.tsx and navlink.tsx
  */
-interface NavBarProps {
-    contents: Content[];
-}
+
 interface Content {
-    title?: string;
+    title: string;
     subLinks?: SubLinks[]; 
     referenceLink?: string;
 }
 
 
-export const NavBar:React.FC<NavBarProps> = ({contents}) => {
-
+export const NavBar:React.FC = () => {
+    const contents : Content[] = data.contents;
     const navItems = contents.map((contents, idx)=>
         {
             //makes sure title was properly set in navcontents.json

@@ -9,7 +9,7 @@ import { Main } from './main/main';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main message="hello world"/>
+    <Main />
   </React.StrictMode>,
   document.getElementById('root')
 );
