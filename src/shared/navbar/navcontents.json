@@ -1,21 +1,25 @@
 {
-    "contents": [
+  "contents": [
+    {
+      "title": "Home",
+      "referenceLink": "link-to-home"
+    },
+    {
+      "title": "Connect Four",
+      "subLinks": [
         {
-            "title": "Home",
-            "referenceLink": "link-to-home"
+          "title": "Easy",
+          "referenceLink": "link-to-child1"
         },
         {
-            "title": "Bottom Bitches",
-            "subLinks": [
-                {
-                    "title": "Graeme",
-                    "referenceLink": "link-to-child1"
-                },
-                {
-                    "title":"Graeme again",
-                    "referenceLink":"link-to-child2"
-                }
-            ]
+          "title": "Medium",
+          "referenceLink": "link-to-child2"
+        },
+        {
+          "title": "Hard",
+          "referenceLink": "link-to-child2"
         }
-    ]
+      ]
+    }
+  ]
 }

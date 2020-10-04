@@ -1,32 +1,61 @@
-
-html, body, #root {
-    width: 100%;
-    height: 100%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .Main {
-    width: 100%;
-    height: 100%;
-    background-color: var(--main-bg-colour);
+  width: 100%;
+  height: 100%;
 }
 
 .Main-header {
-    color: var(--main-text-colour);
-    width: 100%;
+  color: var(--main-text-colour);
+  width: 100%;
+}
+.Main-body {
+  height: auto;
+  display: flex;
 }
 
-.Main-body {
-    width: 70%;
-    height: inherit;
-    display: flex;
-    margin: auto;
-    background-color: var(--secondary-accent-colour);
-    color: var(--main-text-colour);
-    font-size: 40px;
-    text-align: center;
-    justify-content: center;
+.Main-content {
+  width: 100%;
+  background-color: var(--secondary-accent-colour);
+  color: var(--main-text-colour);
+  font-size: 100px;
+  text-align: center;
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.Main-left {
+  height: 100%;
+  width: 15%;
+  background-image: url("../resources/images/nature-left.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+.Main-right {
+  height: 100%;
+  width: 15%;
+  background-image: url("../resources/images/nature-right.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  right: 0;
+  position: fixed;
+  z-index: 10;
 }
