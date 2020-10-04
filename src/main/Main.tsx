@@ -1,27 +1,25 @@
 import React from 'react';
-import logo from '../logo.svg';
 
-type MainProps = {
-    message: string;
-}
+import { NavBar } from '../shared/navbar/navbar';
 
-export const Main:React.FC<MainProps> = ({message}) => {
+
+export const Main:React.FC = () => {
     return (
+
         <div className="Main">
-          <header className="Main-header">
-            <img src={logo} className="Main-logo" alt="logo" />
-            <p className="test">
-              {message}
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </header>
+            <div className="Main-header">
+              <NavBar />
+            </div> 
+            <div className="Main-body">
+              <p>
+              top tier<br/>
+              10/10 would recommed<br/>
+              if i had a company that was hiring<br/>
+              no matter what position<br/>
+              yould get the job<br/>
+              -Nico
+              </p>
+            </div>
         </div>
       );
 }

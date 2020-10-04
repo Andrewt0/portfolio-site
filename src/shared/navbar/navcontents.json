@@ -1,0 +1,21 @@
+{
+    "contents": [
+        {
+            "title": "Home",
+            "referenceLink": "link-to-home"
+        },
+        {
+            "title": "Bottom Bitches",
+            "subLinks": [
+                {
+                    "title": "Graeme",
+                    "referenceLink": "link-to-child1"
+                },
+                {
+                    "title":"Graeme again",
+                    "referenceLink":"link-to-child2"
+                }
+            ]
+        }
+    ]
+}

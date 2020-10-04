@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 
 import './style/styles.css';
 
-import { Main } from './main/Main';
+import { Main } from './main/main';
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main message="hello world"/>
+    <Main />
   </React.StrictMode>,
   document.getElementById('root')
 );
