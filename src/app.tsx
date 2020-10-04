@@ -1,7 +1,7 @@
 import React from "react";
 
 import { NavBar } from "./shared/navbar/navbar";
-import { Main } from "./main/main";
+import { Main } from "./home/home";
 
 /** Main Component
  *
