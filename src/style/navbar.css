@@ -18,7 +18,6 @@ Stylesheet for navbar components
 .navbar a:hover, .dropdown:hover .dropdown-btn, .dropdown-content a:hover {
     background-color: var(--main-accent-text);
     color: var(--main-accent-colour);
-    border: 1px solid var(--main-accent-colour);
 }
 
 .dropdown {

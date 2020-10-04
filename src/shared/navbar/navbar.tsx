@@ -21,23 +21,16 @@ export const NavBar:React.FC = () => {
     const contents : Content[] = data.contents;
     const navItems = contents.map((contents, idx)=>
         {
-            //makes sure title was properly set in navcontents.json
-            if(contents.title){
+            const title = contents.title ? contents.title : "Undefined";
+            const referenceLink = contents.referenceLink ? contents.referenceLink : "";
                 //if item has sublinks for dropdown
-                if(contents.subLinks){
-                    return(
-                        <NavItem title={contents.title} subLinks = {contents.subLinks} key={idx}/>
-                    );
-                }
-                if(contents.referenceLink){
-                    return(
-                        <NavItem title={contents.title} referenceLink = {contents.referenceLink} key={idx}/>
-                    );
-                }
+            if(contents.subLinks){
+                return(
+                     <NavItem title={title} subLinks = {contents.subLinks} key={idx}/>
+                );
             }
-            //default return if missing information to form proper item
             return(
-                <NavItem title="Undefined" referenceLink="" key={idx}/>
+                <NavItem title={contents.title} referenceLink = {referenceLink} key={idx}/>
             );
         }
     );

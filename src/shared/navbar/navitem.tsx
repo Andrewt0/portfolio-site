@@ -28,17 +28,14 @@ export const NavItem:React.FC<NavItemProps> = (props) => {
         const navItems = props.subLinks.map((subLinks, idx)=>
         //checks that both properties were properly set in navcontents.json
         {
-            console.log(subLinks);
-            if(subLinks.title && subLinks.referenceLink){
-                return(
-                    <NavLink title={ subLinks.title } referenceLink={ subLinks.referenceLink } key={ idx }/>
-                );
-            } else {
-                //passes default values if either were not properly set
-                return(
-                    <NavLink title="Undefined" referenceLink="" key={idx}  />
-                );
-            }
+            const title = subLinks.title ? subLinks.title : "Undefined";
+            const referenceLink = subLinks.referenceLink ? subLinks.referenceLink : "";
+
+            return (
+                <NavLink title={ title } referenceLink={ referenceLink } key={ idx }/>
+            );
+           
+         
         }
        
     );
