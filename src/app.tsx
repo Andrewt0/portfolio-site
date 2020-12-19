@@ -3,8 +3,8 @@ import React from "react";
 import { NavBar } from "./shared/navbar/navbar";
 import { Main } from "./home/home";
 
-/** Main Component
- *
+/**
+ * Main Component
  */
 export const App: React.FC = () => {
   return (
